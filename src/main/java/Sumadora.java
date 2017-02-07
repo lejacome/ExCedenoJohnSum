@@ -9,7 +9,9 @@ public class Sumadora {
     public int sumar(){
        int suma=0;
        for ( int num : this.nums ) {
-           suma = suma + num;
+    	   if (num <= 1000){
+    		   suma = suma + num;
+    	   }
        }
        return suma;
        }

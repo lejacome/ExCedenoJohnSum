@@ -45,4 +45,12 @@ public class SumadoraTest {
 		assertEquals(121, s.sumar());
 	}
 
+	@Test
+	public void sumarMenosDeMil() {
+		int[] a = {3,1000,1001,6,1234};
+		when(c.convertir("3,1000,1001,6,1234")).thenReturn(a);
+		
+		Sumadora s = new Sumadora(c.convertir("3,1000,1001,6,1234"));
+		assertEquals(1009, s.sumar());
+	}
 }

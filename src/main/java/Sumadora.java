@@ -9,7 +9,11 @@ public class Sumadora {
 	}
 
 	public int sumar(){
-		return 0;
+		int suma=0;
+       for ( int num : this.nums ) {
+           suma = suma + num;
+       }
+       return suma;
 	}
 	
 	

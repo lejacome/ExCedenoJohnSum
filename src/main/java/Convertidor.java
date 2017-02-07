@@ -1,4 +1,3 @@
-
 public interface Convertidor {
-	public int[] convertir(String s);
+    public int[] convertir(String s);
 }

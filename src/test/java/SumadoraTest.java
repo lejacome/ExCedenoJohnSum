@@ -35,5 +35,14 @@ public class SumadoraTest {
 		Sumadora s = new Sumadora(c.convertir("3,6"));
 		assertEquals(9, s.sumar());
 	}
+	
+	@Test
+	public void sumarMasDeDosNumeros() {
+		int[] a = {3,6,15,18,46,33};
+		when(c.convertir("3,6,15,18,46,33")).thenReturn(a);
+		
+		Sumadora s = new Sumadora(c.convertir("3,6,15,18,46,33"));
+		assertEquals(121, s.sumar());
+	}
 
 }
